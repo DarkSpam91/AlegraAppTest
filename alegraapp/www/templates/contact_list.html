@@ -1,0 +1,15 @@
+<ion-view view-title="Contactos">
+  <ion-content>
+      <ion-refresher pulling-text="Actualizando lista..." on-refresh="loadnewestcontacts()"></ion-refresher>
+    <ion-list>
+      <ion-item class="item-thumbnail-left" ng-repeat="contacts in contacts" href="#/app/contacts/{{contacts.id}}">
+        <img ng-src="img/contacts3.png" />
+        {{contacts.name}}
+      </ion-item>
+    </ion-list>
+    <ion-infinite-scroll  immediate-check="false"  ng-if="!noMoreItemsAvailable && !refreshing"  on-infinite="loadoldestcontacts()" distance="1%">
+        <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Cargando...">
+    </ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+  </ion-content>
+</ion-view>

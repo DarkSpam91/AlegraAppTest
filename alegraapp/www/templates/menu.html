@@ -1,0 +1,36 @@
+<ion-side-menus enable-menu-with-back-views="false" >
+  <ion-side-menu-content >
+    <ion-nav-bar class="bar custom-nav-bar">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="left" >
+        <button class="button button-icon button-clear ion-navicon " id="white-icons"  menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+
+      <ion-nav-buttons side="right">
+          <button class="button button-icon button-clear ion-plus cb" ng-click="createcontacturl()" id="white-icons">
+          </button>
+        </ion-nav-buttons>  
+      
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left">
+    <ion-header-bar class="bar-stable" id="custom-nav-bar">
+      <h1 class="title" id="custom-h1">Menú</h1>
+    </ion-header-bar>
+    <ion-content>
+      <ion-list>
+        <ion-item menu-close href="#/app/Contacts">
+          <i class="icon ion-android-person"> Contactos</i>
+        </ion-item>
+        <ion-item menu-close href="#/app/info">
+          <i class="icon  ion-information-circled"> Desarrollador</i>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

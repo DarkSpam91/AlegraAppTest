@@ -1,0 +1,67 @@
+<ion-view view-title="Detalles">
+  <ion-content>
+      <div class = "card">
+          <div class = "item" >
+          <div class="row">
+            <div class="col-90">
+                <input type="text" style="width: 100%;" value={{response_by_id.name}} style="color: #434343;;font-weight:600" disabled>
+            </div>
+            <div class="col-10">
+                <button class="button " ng-click="deletecontacts({{response_by_id.id}})" style="background-color:transparent !important;">
+                    <i class="icon ion-trash-b"></i>
+                  </button>     
+            </div>
+          </div>
+          </div>
+          <div class = "item item-text-wrap">
+              <div class="row">
+                  <div class="col-25">
+                  </div>
+                  <div class="col-25">
+                      <button class="button " style="background-color:transparent !important;">
+                          <i class="icon ion-email"></i>
+                        </button>     
+                  </div>
+                  <div class="col-25">
+                      <button class="button " style="background-color:transparent !important;">
+                          <i class="icon ion-android-call"></i>
+                        </button>                      
+                  </div>
+                  <div class="col-25">
+                  </div>
+          </div>
+       </div>
+
+       <div class = "card list" >
+          <div class = "item item-divider" style="background-color:#00b19d; color:#ffffff;font-weight:400">
+             <i class="icon ion-document-text"> Detalles</i>
+          </div>
+          
+          <div class = "item item-text-wrap">
+             <h4>Identificación</h4>
+             <input type="text" style="width: 100%;" value={{response_by_id.identification}} disabled>
+          </div>
+          <div class = "item item-text-wrap">
+              <h4>Correo Electrónico</h4>
+              <input type="text" style="width: 100%;" value={{response_by_id.email}} disabled>
+          </div>
+          <div class = "item item-text-wrap">
+              <h4>Celular</h4>
+              <input type="text" style="width: 100%;"  value={{response_by_id.mobile}} disabled>
+          </div>
+          <div class = "item item-text-wrap">
+              <h4>Teléfono</h4>
+              <input type="text" style="width: 100%;" value={{response_by_id.phonePrimary}} disabled>
+          </div>
+          <div class = "item item-text-wrap">
+              <h4>Teléfono 2</h4>
+              <input type="text" style="width: 100%;" value={{response_by_id.phoneSecondary}} disabled>
+          </div>
+          <div class = "item item-text-wrap">
+              <h4>Dirección</h4>
+              <input type="text" style="width: 100%;" value={{response_by_id.address.address}} disabled>
+          </div>
+          
+       </div>
+  </ion-content>
+</ion-view>

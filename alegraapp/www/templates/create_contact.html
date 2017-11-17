@@ -1,0 +1,75 @@
+<ion-view view-title="Nuevo contacto">
+        <ion-content>
+            <form name="createform" novalidate>
+            <div class = "card list">
+                <div class = "item" >
+                    <button class="button "  style="background-color:transparent !important;width:100%">
+                      <i class="icon ion-plus-circled"style="color:#00b19d;font-weight:600px" > Añadir desde teléfono</i>
+                    </button>     
+                </div>
+                <div class = "item item-text-wrap">
+                        <h4><i class="icon ion-android-person" ></i> Nombre</h4>
+                        <h3><input type="text" ng-model="newcontact.name" name="name" ></input></h3>
+                        
+                </div>
+
+                <div class = "item item-text-wrap">
+                        <h4><i class="icon ion-email" ></i> Correo electrónico</h4>
+                        <h3><input type="text" ng-model="newcontact.email" name="email" ></input></h3>
+                </div>
+
+                <div class = "item item-text-wrap">
+                        <h4><i class="icon ion-android-call" ></i> Teléfono</h4>
+                        <h3><input type="text" ng-model="newcontact.phonePrimary"></input></h3>
+                </div>
+             </div>
+      
+             <div class = "card list" >
+                <div class = "item item-divider" style="background-color:#00b19d; color:#ffffff;font-weight:400">
+                   <i class="icon ion-document-text"> Detalles</i>
+                </div>
+                
+                <div class = "item item-text-wrap">
+                   <h4>Identificación</h4>
+                   <h3><input type="text" ng-model="newcontact.identification"></h3>
+                </div>
+   
+                <div class = "item item-text-wrap">
+                    <h4>Celular</h4>
+                    <h3><input type="text" ng-model="newcontact.mobile"></h3>
+                </div>
+            
+                <div class = "item item-text-wrap">
+                    <h4>Teléfono 2</h4>
+                    <h3><input type="text" ng-model="newcontact.phoneSecondary"></h3>
+                </div>
+                <div class = "item item-text-wrap">
+                    <h4>Fax</h4>
+                    <h3><input type="text" ng-model="newcontact.fax"></h3>
+                </div>
+                
+             </div>
+
+             <div class = "card list" >
+                <div class = "item item-divider" style="background-color:#00b19d; color:#ffffff;font-weight:400">
+                   <i class="icon ion-ios-location"> Dirección</i>
+                </div>
+                
+                <div class = "item item-text-wrap">
+                   <h4>Dirección</h4>
+                   <h3><input type="text" ng-model="newcontact.address"></h3>
+                </div>
+   
+                <div class = "item item-text-wrap">
+                    <h4>Ciudad</h4>
+                    <h3><input type="text" ng-model="newcontact.city"></h3>
+                </div>
+                <br>
+                <button class="button button-large "  type="submit" style="background-color:#00b19d;color:#ffffff;width:50%;justify-content:center;margin-top:-8px;margin-left:25%"  ng-click="create(newcontact)">Crear</button>
+                <br>
+                <br>
+             </div>
+            </form>
+        </ion-content>
+      </ion-view>
+      
